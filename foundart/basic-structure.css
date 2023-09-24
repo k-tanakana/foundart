@@ -1,0 +1,72 @@
+header {
+display: flex;
+width: 100%;
+height: 50px;
+align-items: center;
+font-family: serif;
+color:#324158;
+margin:0px 0px 20px 0px ;
+background-color: rgb(221, 221, 221);}
+
+.page-grid{margin:30px 5% 100px 5%;
+  font-family: 'Noto Sans JP', sans-serif;}
+
+.login{
+font-family: 'Sawarabi Gothic', sans-serif;
+}
+
+.select-form{display: flex;
+  align-items: center;
+margin:30px;}
+
+.select-form button{width:30px;
+height:30px;
+margin:0px 10px 0px 0px;
+border-radius: 30px; /* 50%の値で丸い形状を指定 */
+border: none; /* ボーダーを無効にする */
+outline: none; 
+}
+
+.select-form img{width:100%;
+height:100%;
+object-fit: contain;}
+
+/*-----------------ヘッダー-------------------*/
+
+body {
+margin: 0%;
+padding: 0;
+font-family: 'Sawarabi Gothic', sans-serif;}
+    
+nav{margin-right:auto;}
+
+.menu-item {
+list-style: none;
+display: inline-block;
+padding: 10px;
+}
+    
+a{text-decoration: none;
+color:#324158;}
+
+h1{font-family: serif;
+  font-size: 35px;
+}
+
+h2{font-size:35px;
+color: #324158;
+font-family: serif;}
+
+h3{
+font-size:30px;
+color:black;
+}
+
+h4{
+  font-size:20px;
+  color:black;
+}
+
+.page-font{font-size: 14px;
+line-height: 1.2;
+margin:0px 0px 5px 0px;}

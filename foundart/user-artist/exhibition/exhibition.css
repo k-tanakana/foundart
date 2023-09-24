@@ -1,0 +1,218 @@
+.listpage-top-container{
+  width:100%;
+  height:300px;
+  position:relative;
+  }
+
+  .listpage-top-container img{width:100%;
+  height:200px;
+  position:absolute;
+  object-fit: cover;}
+
+.item1 img{width:100%;}
+
+.content-grid {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap:20px;}
+
+
+.exhi-detail-top-img{width: 100%;
+  background-color: #1f71b5;
+height: 300px;
+color: #F0F8FF;}
+
+.artist-icon-img{border-radius: 50%;
+width: 100px;
+height: 100px;}
+
+.artist-icon-container{width: 100%;
+height: 90px;}
+
+.detail-header{color:grey;
+font-size:13px;}
+
+table{
+  width:100%;
+  color: #5d627b;
+  background: white;
+  border-top: solid 5px #5d627b;
+  box-shadow: 0 3px 5px rgba(0, 0, 0, 0.22);
+  border-radius: 5px;
+  padding:3px
+}
+
+td{width: auto;
+padding: 5px 3px 1px 3px;
+border-bottom: solid 1px #5d627b;}
+
+th {
+  margin:0px 10px 0px 0px ;
+  padding: 5px 3px 2px 3px;
+  width:75px;
+font-weight: normal;
+font-size:12px;
+text-align: left;
+border-bottom: solid 1px #5d627b;}
+
+.page-h2{color:black;
+  position:absolute;
+  top:0px;
+  left:80px;
+}
+
+.exhi-item{
+margin:30px 0px 0px 0px;
+width:100%;
+position:relative;}
+
+.exhi-item img{
+border-radius: 10px;
+object-fit:cover;
+width: 100%;
+height: 200px;
+}
+
+.item-text-container{width:max-content;
+position:absolute;
+top:0%;
+background-color: rgba(255, 255, 255, 0.6);
+padding:5px 10px 5px 10px;
+line-height:18px;}
+
+
+.artist-name {
+  width: 0px;
+  display: inline-block;
+}
+
+#artist-name-textbox {
+  width: 300px;
+}
+
+/*-----------------詳細ページ-------------------*/
+.grid-container {
+  display: grid;
+  height:auto;
+  grid-template-columns:  49% 2% 49% ;
+}
+
+
+.item1 {grid-column: 1;
+height:auto;}
+
+.item2 {
+  grid-column: 3;
+}
+
+h2{margin:0px;
+}
+
+.artist-icon-container{width: 100%;
+height: auto;
+margin:0px 0px 20px 0px;}
+
+.detail-header{color:grey;
+font-size:13px;}
+
+
+.artist-icon-container img{ border-radius: 50%;
+ width:15%;
+  aspect-ratio: 1 / 1;}
+
+  
+
+
+
+/*-----------------listページタブ-------------------*/
+.serch-function-container{
+  width:auto;
+  padding:10px;
+  position:absolute;
+  top: 30%;
+  left: 50%;
+  transform: translate(-50%, 3%);
+  background-color: rgba(255, 255, 255, 0.8);
+  box-shadow: 0 0 30px rgba(0, 0, 0, 0.5);
+  border-radius: 6px;}
+
+  .tab-container {
+    width: 100%;
+    height:max-content;
+  }
+/* タブのスタイル */
+.tab_menu {
+  width: calc(100% / 6);
+  height: max-content;
+  line-height: 30px;
+  font-size: 16px;
+  text-align: center;
+  color: #000;
+  border-bottom: 3px solid #1f71b5;
+  background-color: #d9d9d9;
+  display: block;
+  float: left;
+  text-align: center;
+  font-weight: bold;
+  transition: all 0.2s ease;
+  cursor: pointer;
+}
+
+.tab_menu:hover {
+  opacity: 0.75;
+}
+
+/* ラジオボタンを全て消す */
+input[name="tab_menu"] {
+  display: none;
+}
+
+input[name="status"] {
+  display: none;
+}
+
+/* タブ切り替えの中身のスタイル */
+.tab_contents {
+  display: none;
+  padding: 10px;
+  clear: both;
+  overflow: hidden;
+  transition: .5s opacity;
+  box-shadow: 0 0 3px rgba(0, 0, 0, .2);
+}
+
+/* 選択されているタブを表示 */
+#tab1:checked ~ #menu1,
+#tab2:checked ~ #menu2,
+#tab3:checked ~ #menu3,
+#tab4:checked ~ #menu4,
+#tab5:checked ~ #menu5,
+#tab6:checked ~ #menu6 {
+  display: block;
+}
+
+/* 選択されているタブのスタイル */
+.tab-container input:checked + .tab_menu {
+  background-color: #1f71b5;
+  color: #fff;
+}
+
+/* ボタンのスタイル */
+.tab_contents input[type="checkbox"] {
+  display: none;
+}
+
+.tab_contents label {
+  display: inline-block;
+  padding: 4px 8px;
+  background-color: #f0f0f0;
+  border-radius: 5px;
+  margin: 2px;
+  cursor: pointer;
+  font-size:12px;
+}
+
+.tab_contents input[type="checkbox"]:checked + label {
+  background-color: #1f71b5;
+  color: #fff;
+}

@@ -1,0 +1,149 @@
+
+.detail-artist-detail-grid{
+    margin: 0 15% 0 10% ;
+    display: grid;
+    grid-template-columns: max-content 40px auto;
+}
+
+.item1 {grid-column: 1;}
+
+.item2 {grid-column: 3;}
+
+  .artist-prof{display: flex;
+    align-items: center;}
+
+  .artist-prof img{width:20px;
+    height:20px;
+    margin:5px;}
+
+    .icon-container{width:100%;
+      display:flex;}
+
+    .icon-container img{width:25px;
+      height:25px;
+      margin:0px 5px 0px 0px}
+
+   .left-icon{margin-right:auto;}
+
+  .right-icon img{margin:0px 10px 0px 10px;}
+
+.main-img {
+    object-fit: cover;
+    width: 100%;
+    height: 400px;
+}
+
+.artist-text-profile{margin:30px 0px 0px 0px;
+}
+
+.artist-icon {
+    border-radius: 50px 50px 50px 50px;
+    width: 100px;
+    height: 100px;
+}
+.btn-brackets {
+  margin-right:10px;
+  display: inline-block;
+  position: relative;
+  padding: 0.5em 20px;
+  text-decoration: none;
+  color: #000;
+  transition: .4s;
+}
+.btn-brackets:hover {
+  color: #324158;
+  font-weight: 1000;
+}
+.btn-brackets:before, .btn-brackets:after {
+  position: absolute;
+  top: 0;
+  content:'';
+  width: 8px;
+  height: 100%;
+  display: inline-block;
+}
+.btn-brackets:before {
+  border-left: solid 1px #324158;
+  border-top: solid 1px #324158;
+  border-bottom: solid 1px #324158;
+  left: 0;
+}
+.btn-brackets:after {
+  content: '';
+  border-top: solid 1px #324158;
+  border-right: solid 1px #324158;
+  border-bottom: solid 1px #324158;
+  right: 0;
+}
+
+.image-container img {
+    max-width: 100px; /* 画像の最大幅を調整 */
+    height: auto;
+  }
+  
+
+.twitter-icon{border-radius: 6px;}
+
+.artist-content-img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 5px;
+margin: 10px 0px 0px 0px;}
+
+.title{font-size: 50px;
+}
+
+/*------------------------------------*/
+.artist-content {
+    margin:0 auto;
+    padding:60px 0px 0px 0px;
+    width: 100%;
+    flex-wrap: wrap;
+    display: flex;
+}
+
+.tab_class {
+    width: calc(100%/5);
+    height: 50px;
+    background-color: darkgrey;
+    line-height: 50px;
+    font-size: 15px;
+    text-align: center;
+    display: block;
+    float: left;
+    order: -1;
+}
+
+input[name="tab_name"] {
+    display: none;
+}
+
+input:checked+.tab_class {
+    background-color: cadetblue;
+    color: aliceblue;
+}
+
+.content_class {
+    display: none;
+    width: 100%;
+    height:max-content;
+}
+
+.detail {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+}
+
+.item {
+  width: 100%;
+}
+
+input:checked+.tab_class+.content_class {
+    display: block;
+}
+
+.artist-name{font-size:25px;
+margin-right:auto;}
+

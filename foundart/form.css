@@ -1,0 +1,201 @@
+body{font-family: 'Noto Sans JP', sans-serif;
+text-align: center;
+}
+
+.form-container {
+    display: grid;
+    justify-content: center;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 20px 20px;
+    max-width: 30%; /* 幅を40%に指定 */
+    margin: 0 auto; /* 中央に配置 */
+    margin-bottom: 30px;
+}
+
+.form-row {
+    width:100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.large-row {margin:0px 0px 10px 0px;
+    grid-column: span 2; 
+    margin-left: auto;
+}
+
+.form-row img{width: 100%;
+  height:150px;
+object-fit:contain;}
+
+
+label {
+  font-size: 14px;
+    margin-right: auto;
+    margin-bottom: 5px;
+}
+
+input {
+    padding: 5px;
+    border: 1px solid #9d9b9b;
+    border-radius: 3px;
+}
+
+.page-grid{justify-content: center;}
+
+textarea{height:100px;}
+
+.submit{margin-top: 20px;
+height:80px;}
+
+
+
+
+
+.tab-container {
+    width: 100%;
+    height:100px;
+    margin-bottom: 10px;
+  }
+  
+  /* タブのスタイル */
+  .tab_menu {
+    border-radius: 3px 3px 0px 0px;
+    width: calc(100% / 6);
+    height: 30px;
+    line-height: 30px;
+    font-size: 16px;
+    text-align: center;
+    color: #000;
+    border-bottom: 1px solid #324158;
+    display: block;
+    float: left;
+    text-align: center;
+    transition: all 0.2s ease;
+    cursor: pointer;
+   }
+  
+  .tab_menu:hover {
+    opacity: 0.75;
+  }
+  
+  /* ラジオボタンを全て消す */
+  input[name="tab_menu"] {
+    display: none;
+  }
+  
+  /* タブ切り替えの中身のスタイル */
+  .tab_contents {
+    text-align: left;
+    display: none;
+    padding: 10px;
+    margin-right: auto;
+    clear: both;
+    overflow: hidden;
+    transition: .5s opacity;
+    box-shadow: 0 0 3px rgba(0, 0, 0, .2);
+  }
+  
+  /* 選択されているタブを表示 */
+  #tab1:checked ~ #menu1,
+  #tab2:checked ~ #menu2,
+  #tab3:checked ~ #menu3,
+  #tab4:checked ~ #menu4,
+  #tab5:checked ~ #menu5,
+  #tab6:checked ~ #menu6 {
+    display: block;
+  }
+  
+  /* 選択されているタブのスタイル */
+  .tab-container input:checked + .tab_menu {
+    background-color: #324158;
+    color: #fff;
+  }
+  
+  /* ボタンのスタイル */
+  .tab_contents input[type="checkbox"] {
+    display: none;
+  }
+  
+  
+  .tab_contents label {
+    display: inline-block;
+    padding: 4px 8px;
+    background-color: #f0f0f0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin: 2px;
+    cursor: pointer;
+    font-size:12px;
+  }
+  
+  .tab_contents input[type="checkbox"]:checked + label {
+    background-color: #324158;
+    color: #fff;
+  }
+  
+  /*---------上段のセレクトボタン---------*/
+  .checkbox {
+    display: flex;
+    gap: 10px;
+}
+
+.checkbox input[type="checkbox"] {
+    display: none;
+}
+
+.checkbox label {
+  flex:1;
+  background-color: #f0f0f0;
+    border-radius: 5px;
+    display: inline-block;
+    font-size: 12px;
+    padding: 8px 4px;
+    background-color: #f0f0f0;
+    border: 1px solid #ccc;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.checkbox input[type="checkbox"]:checked + label {
+    background-color: #007bff;
+    color: #fff;
+    border-color: #007bff;
+}
+
+.checkbox-label{text-align: left;
+margin:0px 0px 5px 0px;
+font-size: 14px;}
+
+.radio-label {
+  font-size:14px;
+  text-align: left;
+}
+
+.radio {
+  display: flex;
+  gap: 10px;
+
+}
+
+.radio input[type="radio"] {
+  display: none;
+}
+
+.radio label {
+  padding: 8px 16px;
+  background-color: #d9d9d9;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size:12px;
+  width:auto;
+  flex: 1; /* 幅を均等に分割 */
+  padding: 8px 0;
+}
+
+.radio input[type="radio"]:checked + label {
+  background-color: #1f71b5;
+  color: #fff;
+  border-color: #1f71b5;
+  font-size:12px;
+}
